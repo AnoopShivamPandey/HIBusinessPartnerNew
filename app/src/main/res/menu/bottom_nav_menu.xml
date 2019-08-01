@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_light"
+        android:title="@string/title_dashboard"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/navigation_network"
+        android:icon="@drawable/ic_network_light"
+        android:title="@string/title_network"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_light"
+        android:title="@string/title_profile"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+    <item
+        android:id="@+id/navigation_add_user"
+        android:icon="@drawable/ic_add_user_light"
+        android:title="@string/title_add_user"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_more_light"
+        android:title="@string/title_more"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+
+</menu>

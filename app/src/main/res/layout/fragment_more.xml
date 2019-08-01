@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Fragment.More">
+
+    <include layout="@layout/header_layout" />
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_mynetwork"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_mynetwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_my_network_black"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="MY NEtWORK"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/iv_mynetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/ic_expand_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mynetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_myright"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="MY RIGHT"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color"/>
+
+                <TextView
+                    android:id="@+id/tv_myleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="MY LEFT"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color" />
+
+                <TextView
+                    android:id="@+id/tv_mynetworktree"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="MY NEtWORK TREE"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_withdrawals"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_withdrawals"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_withdrawals_black"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="WITHDRAWALS"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/iv_withdrawals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_withdrawals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="REQUESTS"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color" />
+
+                <TextView
+                    android:id="@+id/tv_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="HISTORY"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_about_us_black"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="ABOUT US"
+                android:clickable="true"
+                android:textColor="@drawable/textview_click_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_photogallery"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_photo_gallery_black"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="PHOTO GALLERY"
+                android:clickable="true"
+                android:textColor="@drawable/textview_click_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_videogallery"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_video_gallery_black"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="VIDEO GALLERY"
+                android:clickable="true"
+                android:textColor="@drawable/textview_click_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_staticpages"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_staticpages"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_static_pages_black"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="STATIC PAGES"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/iv_staticpages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_staticpages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="TERMS &amp; CONDITION"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color"/>
+
+                <TextView
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center_vertical"
+                    android:text="PRIVACY POLICY"
+                    android:clickable="true"
+                    android:textColor="@drawable/textview_click_color"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_contactus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_contact_black"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="CONTACT US"
+                android:clickable="true"
+                android:textColor="@drawable/textview_click_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_help_black"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="HELP"
+                android:clickable="true"
+                android:textColor="@drawable/textview_click_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_faq"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_faq_black"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="FAQ"
+                android:clickable="true"
+                android:textColor="@drawable/textview_click_color"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
